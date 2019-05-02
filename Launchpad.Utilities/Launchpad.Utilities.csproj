@@ -5,6 +5,7 @@
     <Platform>x86</Platform>
     <PlatformTarget>x86</PlatformTarget>
     <LangVersion>7.1</LangVersion>
+	<DependsOnNETStandard>false</DependsOnNETStandard>
   </PropertyGroup>
   <!-- Workaround for https://github.com/dotnet/roslyn-project-system/issues/1739 -->
   <PropertyGroup>

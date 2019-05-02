@@ -3,6 +3,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <CodeAnalysisRuleSet>..\stylecop.ruleset</CodeAnalysisRuleSet>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+	<DependsOnNETStandard>false</DependsOnNETStandard>
     <Platform>x86</Platform>
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>

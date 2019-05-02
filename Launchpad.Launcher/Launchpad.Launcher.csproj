@@ -1,12 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <AssemblyName>Launchpad</AssemblyName>
-    <TargetFramework>net462</TargetFramework>
+    <AssemblyName>SonicKartLauncher</AssemblyName>
+    <TargetFramework>net472</TargetFramework>
     <Platform>x86</Platform>
     <PlatformTarget>x86</PlatformTarget>
     <CodeAnalysisRuleSet>..\stylecop.ruleset</CodeAnalysisRuleSet>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+	<DependsOnNETStandard>false</DependsOnNETStandard>
     <LangVersion>7.1</LangVersion>
   </PropertyGroup>
   <!-- Workaround for https://github.com/dotnet/roslyn-project-system/issues/1739 -->
@@ -17,6 +18,8 @@
     <Version>2.0.0</Version>
     <Description>An open-source launcher for your games.</Description>
     <Authors>Jarl Gullberg;jax</Authors>
+    <ApplicationIcon>tumblr_n6pwxyx3jF1ssjt3yo2_1280.ico</ApplicationIcon>
+    <Win32Resource />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <Prefer32bit>true</Prefer32bit>
@@ -26,9 +29,11 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <Prefer32bit>true</Prefer32bit>
+    <OutputPath>C:\Users\Fishf\Documents\code\LaunchpadBuild\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Prefer32bit>true</Prefer32bit>
+    <OutputPath>C:\Users\Fishf\Documents\code\LaunchpadBuild\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Config.Net" Version="4.7.3" />
